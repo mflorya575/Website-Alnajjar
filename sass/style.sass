@@ -1,0 +1,1084 @@
+@import "normalizes.scss"
+@import "resets.scss"
+
+*
+    box-sizing: border-box
+
+
+
+/* @font-face 
+    font-family: 'InterT'
+    src: url(../fonts/Inter-Medium.ttf)
+    font-weight: 500
+    font-style: normal
+    font-display: swap */
+
+/* @font-face 
+    font-family: 'InterT'
+    src: url(../fonts/Inter-Regular.ttf)
+    font-weight: 400
+    font-style: normal
+    font-display: swap */
+
+/* @font-face 
+    font-family: 'InterT'
+    src: url(../fonts/Inter-SemiBold.ttf)
+    font-weight: 600
+    font-style: normal
+    font-display: swap */
+
+/* @font-face 
+    font-family: 'InterT'
+    src: url(../fonts/Inter-Bold.ttf)
+    font-weight: 700
+    font-style: normal
+    font-display: swap */
+
+html
+    font-family: 'Jost', sans-serif
+    font-weight: regular
+
+body
+    background: #F5F7FA
+
+$color-orange: #F29025
+    
+.container
+    position: relative
+    margin: 0 auto
+
+.container2
+    position: relative
+    max-width: 1240px
+    margin: 0 auto
+
+/* Главная страница */
+
+.main-section
+    min-height: 780px
+    background: linear-gradient(90deg, rgba(186, 133, 84, 0.70) 0.03%, rgba(1, 1, 1, 0) 99.94%), url(../images/bg-main.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &__header
+        display: inline-flex
+        align-items: center
+        position: absolute
+        top: 10px
+        left: 50px
+        &-img
+            margin: 29px 178px 0 8px
+    &__nav-menu
+        margin-top: 15px
+    &__ul
+        display: inline-flex
+        &-li
+            margin-right: 40px
+            &:last-child
+                margin-right: 74px
+        &-link
+            text-decoration: none
+            color: #FFF
+            font-size: 18px
+            font-weight: 600
+            line-height: normal
+            &:hover
+                text-decoration: underline
+    &__header-button
+        margin-top: 15px
+    &__hr
+        padding-top: 130px
+    &__wrapper
+        display: grid
+        grid-template-columns: 1fr 3fr
+        margin-top: 155px
+    &__title
+        color: #FFF
+        text-align: right
+        font-size: 63px
+        font-weight: 700
+        line-height: 130.5%
+        text-transform: capitalize
+        margin-bottom: 35px
+    &__block-buttons
+        display: grid
+        justify-items: flex-end
+    &__button
+        border-radius: 19px
+        border: none
+        background: #EA9E50
+        box-shadow: 0px 10.167px 20.334px 0px #1F2022
+        padding: 19px 80px
+        color: #2F2316
+        font-size: 20px
+        font-weight: 600
+        line-height: 125%
+        letter-spacing: 0.4px
+        margin-right: 70px
+        transition: all .3s
+        &:hover
+            border: none
+            background: #ca7e32
+            cursor: pointer
+        &:active
+            border: none
+            background: #87521e
+
+select
+    background: none
+    padding: 7px 13px
+    border: 1.3px solid #FFF
+    border-radius: 10.3px
+    color: #FFF
+    font-size: 14px
+    font-weight: 500
+    line-height: normal
+    background-image: url("data:image/svg+xml,<svg height='15px' width='15px' viewBox='0 0 16 16' fill='%23c4e1ee' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>")
+    background-repeat: no-repeat
+    background-position: calc(100% - 2px) center
+    max-width: 300px
+    padding: 8px 80px 8px 16px
+    outline: none
+    cursor: pointer
+
+option
+    color: #000
+
+input[type='text'],
+input[type='tel']
+    background: #D9D9D9
+    border: none
+    border-radius: 80px
+    width: 420px
+    padding: 10px 0 10px 24px
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.40)
+
+input::placeholder
+    color: rgba(0, 0, 0, 0.26)
+    font-size: 21px
+    font-weight: 500
+    line-height: normal
+
+.input1
+    margin-bottom: 22px
+
+.input2
+    margin-bottom: 25px
+
+.second-section
+    background: #B7D0DD
+    min-height: 1250px
+    &__title
+        color: #000
+        font-size: 70px
+        font-weight: 400
+        line-height: 73.891%
+        padding-top: 100px
+        text-align: center
+    &__text-main
+        color: #000
+        font-size: 25px
+        font-weight: 500
+        line-height: normal
+        margin-top: 21px
+        max-width: 1175px
+        text-align: center
+        margin-bottom: 50px
+    &__wrapper1
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        gap: 11px
+        margin-bottom: 45px
+    &__wrapper2
+        display: grid
+        grid-template-columns: 1fr 2fr
+        gap: 19px
+        margin-bottom: 100px
+
+.second-section__wrapper1-first
+    background: url(../images/block-2/egypt.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 20px
+    width: 391px
+    height: 404px
+    position: relative
+    z-index: 1
+    transition: all .7s
+    &:hover
+        transform: translateY(-10px)
+        box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+        border-radius: 23px
+    &:active
+        transform: translateY(-6px)
+
+.second-section__wrapper1-second
+    background: url(../images/block-2/saudi-arabia.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 20px
+    width: 391px
+    height: 404px
+    position: relative
+    z-index: 1
+    transition: all .7s
+    &:hover
+        transform: translateY(-10px)
+        box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+        border-radius: 23px
+    &:active
+        transform: translateY(-6px)
+
+.second-section__wrapper1-third
+    background: url(../images/block-2/turkey.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 20px
+    width: 391px
+    height: 404px
+    position: relative
+    z-index: 1
+    transition: all .7s
+    &:hover
+        transform: translateY(-10px)
+        box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+        border-radius: 23px
+    &:active
+        transform: translateY(-6px)
+
+.second-section__wrapper2-first
+    background: url(../images/block-2/uae.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    border-radius: 20px
+    width: 391px
+    height: 404px
+    position: relative
+    z-index: 1
+    transition: all .7s
+    &:hover
+        transform: translateY(-10px)
+        box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+        border-radius: 23px
+    &:active
+        transform: translateY(-6px)
+
+.second-section__wrapper2-second
+    background: url(../images/block-2/open-world.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    width: 391px
+    height: 404px
+    position: relative
+    z-index: 1
+    border-radius: 20px
+    width: 801px
+    transition: all .7s
+    &:hover
+        transform: translateY(-10px)
+        box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+        border-radius: 23px
+    &:active
+        transform: translateY(-6px)
+
+.second-section__title-img
+    position: relative
+    z-index: 1
+    top: 300px
+    left: 36px
+    color: #FFF
+    font-size: 37px
+    font-weight: 400
+    line-height: normal
+
+.overlay
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 21.14%, rgba(17, 47, 56, 0.50) 61.76%)
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    border-radius: 20px
+
+.section-third
+    min-height: 1150px 
+    background: #B7D0DD
+    &__title
+        text-align: center
+        color: #000
+        font-size: 70px
+        font-weight: 400
+        line-height: 87%
+        margin-bottom: 20px
+    &__wrapper
+        display: flex
+    &__wrapper-first
+        background: url(../images/block-3/1.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 372px
+        height: 617px
+        box-shadow: 0px 9.703px 19.406px 0px rgba(0, 0, 0, 0.20)
+        border-radius: 45px
+        margin-right: 62px
+        position: relative
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7)
+            border-radius: 45px
+        &:active
+            transform: translateY(-6px)
+    &__wrapper-second
+        background: url(../images/block-3/2.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 372px
+        height: 617px
+        box-shadow: 0px 9.703px 19.406px 0px rgba(0, 0, 0, 0.20)
+        border-radius: 45px
+        margin-right: 62px
+        position: relative
+        margin-top: 80px
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7)
+            border-radius: 45px
+        &:active
+            transform: translateY(-6px)
+    &__wrapper-third
+        background: url(../images/block-3/3.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        width: 372px
+        height: 617px
+        box-shadow: 0px 9.703px 19.406px 0px rgba(0, 0, 0, 0.20)
+        border-radius: 49px
+        position: relative
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7)
+            border-radius: 49px
+        &:active
+            transform: translateY(-6px)
+    &__text1
+        position: absolute
+        top: 36px
+        left: 76px
+        color: #FFF
+        text-align: center
+        font-size: 30px
+        font-weight: 400
+        line-height: normal
+        text-transform: capitalize
+        z-index: 1
+    &__text2
+        position: absolute
+        top: 630px
+        color: #242A3A
+        text-align: center
+        font-size: 23px
+        font-weight: 400
+        line-height: normal
+        z-index: 1
+
+.overlay2
+    width: 100%
+    height: 100%
+    background: #C4C4C4
+    box-shadow: 0px 9.703px 19.406px 0px rgba(0, 0, 0, 0.20)
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    border-radius: 20px
+    opacity: 0.1
+
+.btn
+    border-radius: 38px
+    background: $color-orange
+    border: none
+    color: #141841
+    font-size: 24px
+    font-weight: 500
+    line-height: normal
+    padding: 14px 38px
+    transition: all .3s
+    &:hover
+        background: #dc801f
+        border: none
+        cursor: pointer
+    &:active
+        background: #b76814
+        border: none
+
+.btn-margin
+    margin: 185px
+    margin-left: 492px
+    margin-bottom: 0
+
+.section-fourth
+    min-height: 1150px
+    background: #B7D0DD
+    &__title
+        padding-top: 80px
+        color: #000
+        font-size: 70px
+        font-weight: 400
+        line-height: 73.891%
+        text-transform: uppercase
+        margin-bottom: 30px
+    &__wrapper1
+        display: grid
+        grid-template-columns: 1fr 3fr
+        margin-bottom: 40px
+    &__wrapper2
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        margin-bottom: 51px
+    &__wrapper1-first
+        background: url(../images/block-4/1.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 20px
+        width: 390px
+        height: 404px
+        position: relative
+        margin-right: 31px
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7)
+            border-radius: 25px
+        &:active
+            transform: translateY(-6px)
+    &__wrapper1-second
+        background: url(../images/block-4/2.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 20px
+        width: 816px
+        height: 404px
+        position: relative
+        z-index: 1
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7)
+            border-radius: 25px
+        &:active
+            transform: translateY(-6px)
+    &__text1
+        position: absolute
+        top: 278px
+        left: 30px
+        z-index: 2
+        color: #FFF
+        font-size: 37px
+        font-weight: 400
+        line-height: normal
+    &__text2
+        position: absolute
+        top: 325px
+        left: 30px
+        z-index: 2
+        color: #FFF
+        font-size: 18px
+        font-weight: 500
+        line-height: normal
+    &__wrapper2-first
+        background: url(../images/block-4/3.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 20px
+        width: 390px
+        height: 404px
+        position: relative
+        margin-right: 30px
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7)
+            border-radius: 25px
+        &:active
+            transform: translateY(-6px)
+    &__wrapper2-second
+        background: url(../images/block-4/4.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 20px
+        width: 390px
+        height: 404px
+        position: relative
+        margin-right: 30px
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7)
+            border-radius: 25px
+        &:active
+            transform: translateY(-6px)
+    &__wrapper2-third
+        background: url(../images/block-4/5.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 20px
+        width: 390px
+        height: 404px
+        position: relative
+        margin-right: 30px
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.7)
+            border-radius: 25px
+        &:active
+            transform: translateY(-6px)
+
+.btn-margin2
+    margin-left: 485px
+
+.section-fifth
+    min-height: 870px
+    background: #B7D0DD
+    &__title
+        color: #000
+        font-size: 70px
+        font-weight: 400
+        line-height: 73.891%
+        text-transform: uppercase
+        padding-top: 80px
+        margin-bottom: 30px
+    &__text
+        color: #000
+        font-size: 26px
+        font-weight: 500
+        line-height: 111.891%
+        letter-spacing: 1.17px
+        max-width: 382px
+    &__wrapper
+        display: flex
+    &__grid
+        display: grid
+        gap: 440px
+    &__img1
+        background: url(../images/block-5/1.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 49px
+        width: 421px
+        height: 328px
+        position: relative
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+            border-radius: 49px
+        &:active
+            transform: translateY(-6px)
+        &-text
+            position: absolute
+            top: 240px
+            left: 72px
+            z-index: 5
+            color: #FFF
+            font-size: 37px
+            font-weight: 400
+            line-height: 139.5%
+            letter-spacing: -2.035px
+    &__img2
+        background: url(../images/block-5/2.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 49px
+        width: 416px
+        height: 322px
+        position: relative
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+            border-radius: 49px
+        &:active
+            transform: translateY(-6px)
+        &-text
+            position: absolute
+            top: 240px
+            left: 72px
+            z-index: 5
+            color: #FFF
+            font-size: 37px
+            font-weight: 400
+            line-height: 139.5%
+            letter-spacing: -2.035px
+    &__wrapper-second
+        display: grid
+        gap: 30px
+        margin-right: 26px
+    &__wrapper-third
+        background: url(../images/block-5/3.png)
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat
+        border-radius: 49px
+        width: 416px
+        height: 680px
+        position: relative
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+            border-radius: 49px
+        &:active
+            transform: translateY(-6px)
+        &_text
+            position: absolute
+            top: 590px
+            left: 119px
+            z-index: 5
+            color: #FFF
+            font-size: 37px
+            font-weight: 400
+            line-height: 139.5%
+            letter-spacing: -2.035px
+
+.overlay5
+    width: 100%
+    height: 100%
+    background: linear-gradient(180deg, rgba(11, 11, 34, 0.15) 43.34%, rgba(5, 4, 24, 0.38) 103.24%)
+    box-shadow: 0px 9.703px 19.406px 0px rgba(0, 0, 0, 0.20)
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 0
+    border-radius: 49px
+    /* opacity: 0.1 */
+
+.btn-width
+    width: 262px
+
+.section-sixth
+    min-height: 1370px
+    background: #B7D0DD
+    &__title
+        color: #000
+        font-size: 70px
+        font-weight: 400
+        line-height: 73.891%
+        text-transform: uppercase
+        padding-top: 100px
+        margin-bottom: 55px
+    &__wrapper-first
+        display: flex
+        margin-bottom: 37px
+    &__wrapper-second
+        display: flex
+        margin-bottom: 37px
+    &__wrapper-third
+        display: flex
+    &__block1
+        width: 490px
+        height: 326px
+        transition: all .7s
+        &-img
+            border-radius: 26px
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+            border-radius: 26px
+        &:active
+            transform: translateY(-6px)
+    &__block2
+        background: #F9F8F8
+        border-radius: 26px
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+        &:active
+            transform: translateY(-6px)
+        &-title
+            color: #274C5B
+            font-size: 32.372px
+            font-weight: 400
+            line-height: normal
+            margin-bottom: 10px
+            padding: 82px 0 0 59px
+        &-text
+            color: #525C60
+            font-size: 23.308px
+            font-weight: 400
+            line-height: 165.4%
+            padding: 0 55px 0 59px
+
+.margin-right
+    margin-right: 26px
+
+.height-fix
+    height: 339px
+
+.height-fix2
+    height: 375px
+
+.section-seventh
+    min-height: 695px
+    background: url(../images/bg-seventh.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &__title
+        padding-top: 100px
+        margin-bottom: 100px
+        color: #000
+        text-align: center
+        font-size: 70px
+        font-weight: 400
+        line-height: 73.891%
+        text-transform: uppercase
+    &__wrapper
+        display: flex
+    &__wrapper-first
+        background: #FFF
+        width: 350px
+        height: 204px
+        border-radius: 10px
+        margin-right: 51px
+        position: relative
+        transition: all .7s
+        &-img
+            border-radius: 26px
+        &:hover
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+            border-radius: 26px
+    &__wrapper-second
+        background: #FFF
+        width: 350px
+        height: 204px
+        border-radius: 10px
+        margin-right: 51px
+        position: relative
+        transition: all .7s
+        &-img
+            border-radius: 26px
+        &:hover
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+            border-radius: 26px
+    &__wrapper-third
+        background: #FFF
+        width: 350px
+        height: 204px
+        border-radius: 10px
+        position: relative
+        transition: all .7s
+        &-img
+            border-radius: 26px
+        &:hover
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+            border-radius: 26px
+    &__icon
+        margin-top: 50px
+        margin-left: 37px
+    &__text
+        margin-top: 20px
+        margin-left: 37px
+        color: #474747
+        font-size: 15px
+        font-weight: 300
+        line-height: 20px
+    &__block1
+        display: flex
+        align-items: center
+        gap: 15px
+        margin-top: 80px
+        margin-left: 20px
+    &__title-mini
+        color: #000
+        font-size: 18px
+        font-weight: 700
+        line-height: 28px
+    &__text-mini
+        color: #000
+        font-size: 14px
+        font-weight: 500
+        line-height: 24px
+
+.section-seventh__icon2
+    position: absolute
+    top: 203px
+    left: 36px
+
+.section-eight
+    min-height: 460px
+    background: #B7D0DD
+    &__wrapper-main
+        background: linear-gradient(180deg, #FFF 0%, #FFF 79.34%, #FFF 100%)
+        border-radius: 75px
+        max-width: 1240px
+        max-height: 345px
+        transition: all .7s
+        &:hover
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+    &__title
+        color: #2B3A4B
+        font-size: 48px
+        font-weight: 400
+        line-height: normal
+        padding: 39px 0 27px 101px
+    &__text
+        color: #252B42
+        font-size: 16px
+        font-weight: 400
+        line-height: 140%
+        padding: 0 0 74px 101px
+    &__form
+
+.padding
+    padding-top: 80px
+
+.form
+    display: flex
+    padding: 0 0 65px 109px
+
+input[type='name']
+    padding: 19px 300px 19px 18px
+    margin-right: 70px
+    border-radius: 5px
+    border: 1px solid #E6E6E6
+
+input[type='number']
+    position: relative
+    padding: 19px 247px 19px 18px
+    border-radius: 5px
+    border: 1px solid #E6E6E6
+
+.btn-num
+    position: absolute
+    top: 312px
+    left: 1070px
+    border-radius: 0px 15px 15px 0px
+    border: 1px solid #E6E6E6
+    background: #F29025
+    padding: 19px 35px 19px 27px
+
+.section-footer
+    min-height: 840px
+    background: url(../images/bg-footer.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &__wrapper
+        padding-top: 480px
+        display: flex
+        &-first
+            margin-right: 150px
+        &-second
+            display: grid
+            gap: 4px
+            margin-right: 150px
+        &-third
+            margin-right: 150px
+        &-fourth
+            margin-right: 150px
+    &__link
+        text-decoration: none
+        color: #E0DFFE
+        font-size: 18px
+        font-weight: 500
+        line-height: 140%
+        letter-spacing: 0.72px
+        text-transform: uppercase
+        transition: all .3s ease
+        &:hover
+            text-decoration: underline
+
+/*_________________ About us _________________*/
+
+.bg_about-us
+    min-height: 780px
+    background: linear-gradient(90deg, rgba(135, 97, 61, 0.7) 0.03%, rgba(1, 1, 1, 0) 99.94%), url(../about-us/images/bg-main.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &__wrapper
+        margin-top: 180px
+
+.title-main
+    color: #FFF
+    font-size: 96px
+    font-weight: 700
+    line-height: normal
+    text-align: center
+
+.text-main
+    color: #FFF
+    font-size: 24px
+    font-weight: 600
+    line-height: normal
+    text-align: center
+
+.button-see
+    display: block
+    margin-left: auto
+    margin-right: auto
+    margin-top: 85px
+    border-radius: 10px
+    border: none
+    background: #F29025
+    padding: 10px 30px
+    color: #FFF
+    font-size: 18px
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+    cursor: pointer
+    transition: .3s all
+    &:hover
+        background: #e58620
+
+.choosing
+    min-height: 2050px
+    background: #B7D0DD
+    position: relative
+    &__container
+        border-radius: 72px
+        background: #EA9E50
+        min-height: 1799px
+        max-width: 1240px
+        position: absolute
+        top: 50px
+        left: 100px
+    &__title
+        color: #000
+        font-size: 60px
+        font-weight: 400
+        line-height: normal
+        text-transform: uppercase
+        text-align: center
+        padding-top: 40px
+        margin-bottom: 90px
+    &__wrapper-first
+        display: flex
+        align-items: center
+        gap: 140px
+        margin-bottom: 120px
+    &__wrapper-second
+        display: flex
+        align-items: center
+        gap: 140px
+        margin-bottom: 120px
+    &__wrapper-third
+        display: flex
+        align-items: center
+        gap: 140px
+        padding-bottom: 100px
+    &__title-h4
+        color: #000
+        font-size: 36px
+        font-weight: 400
+        line-height: normal
+        margin-bottom: 25px
+    &__title2-h4
+        color: #000
+        font-size: 36px
+        font-weight: 400
+        line-height: normal
+        margin-bottom: 25px
+        text-align: end
+    &__text
+        color: #525C60
+        font-size: 25px
+        font-weight: 400
+        line-height: 165.4%
+        max-width: 530px
+    &__text2
+        color: #525C60
+        font-size: 25px
+        font-weight: 400
+        line-height: 165.4%
+        max-width: 540px
+        text-align: end
+    &__img1
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
+        transform: rotate(5.304deg)
+        margin-right: 80px
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+    &__img2
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
+        transform: rotate(-8.046deg)
+        margin-left: 65px
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+    &__img3
+        clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
+        transform: rotate(7.2deg)
+        margin-right: 80px
+        transition: all .7s
+        &:hover
+            transform: translateY(-10px)
+            box-shadow: 0px 40px 40px 10px rgba(0, 0, 0, 0.7)
+    &__block1
+        margin-left: 65px
+    &__block3
+        margin-left: 65px
+
+/*_________________ Our Services _________________*/
+
+.bg_services
+    min-height: 780px
+    background: linear-gradient(90deg, rgba(135, 97, 61, 0.7) 0.03%, rgba(1, 1, 1, 0) 99.94%), url(../our-services/images/bg-main.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    &__wrapper
+        margin-top: 180px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
